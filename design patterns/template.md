@@ -101,5 +101,3 @@ What we have here is massive code duplication and we can fix this by using inher
 A template is simply a method that defines an algorithm as a seires of steps. One of more of these steps is defined to be abstract and implemented in a subclas. This ensures the algorithm's structure says unchanged while subclasses provide some part of the implementation.
 
 A hook is a method that is declared in the abstract lcass, but only given an empty or default implementation. This gives subclasses the ability to 'hook into' the algorithm at various points. If they wish, a subclass is also free to ignore the hook.
-
-
