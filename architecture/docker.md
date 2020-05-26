@@ -15,7 +15,7 @@ A docker file builds a Docker image.
 
 THe docker image consists of all source code, node js installation, any dependencies.
 
-BEfore when we used to host applications on servers, we would have to spend quite a bit of time installing all dependencies onto the server computer.
+Before when we used to host applications on servers, we would have to spend quite a bit of time installing all dependencies onto the server computer.
 
 With docker, everything is held in a container and the server computer can simply run the container.
 
@@ -24,6 +24,17 @@ With docker, everything is held in a container and the server computer can simpl
 - Same environment
 - Sandbox Projects
 - Use software built by other developers.
+
+# Terminology
+
+- DockerFile: A file that Docker reads from top to bottom. This file is essentially a recipe for building a Docker image. 
+- Docker Image: The component that Docker builds. It is a snapshot of your environment and application. Once youy build a Docker image, you can send it to other developers and as long as your image works on your machine, it will work on their machines.
+- Docker Container: A container is an instance of a docker image. It is built when we run a docker image. If a docker image is the photograph, a container is the printout of that photograph. It is not meant to be shared within computers or people. Containers run individually.
+
+
+
+
+
 
 
 
