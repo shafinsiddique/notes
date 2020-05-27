@@ -27,12 +27,22 @@ With docker, everything is held in a container and the server computer can simpl
 
 # Terminology
 
-- DockerFile: A file that Docker reads from top to bottom. This file is essentially a recipe for building a Docker image. 
+- DockerFile: A file that Docker reads from top to bottom. This file is essentially a recipe for building a Docker image. A Dockerfile is used to create Docker images. It’s a set of commands that performs a task, such as adding files and folders or installing packages. How the final Docker image is going to look is defined by the Dockerfile. Below are a few lines from a sample Dockerfile.
+
+
 - Docker Image: The component that Docker builds. It is a snapshot of your environment and application. Once youy build a Docker image, you can send it to other developers and as long as your image works on your machine, it will work on their machines.
-- Docker Container: A container is an instance of a docker image. It is built when we run a docker image. If a docker image is the photograph, a container is the printout of that photograph. It is not meant to be shared within computers or people. Containers run individually.
+- Docker Container: A container is an instance of a docker image. It is built when we run a docker image. If a docker image is the photograph, a container is the printout of that photograph. 
 
+# Heroku vs Docker
 
+"A lightweight container running a single super specified command" is how Heroku defines the dynos on which the platform runs. Essentially, Heroku puts a propietory sandbox (A sandbox is a testing environment that isolates untested code changes and outright experimentation from the production environment or repository, in the context of software development including Web development and revision control.) up arund what it can do and abstracts the container away from the user.r
 
+Docker, on the other hand, uses an open soruce container standard that is capable of of running anywhere.
+
+Heroku defines the underlying container while Docker enables an infinite amount of flexibility and portability by giving the user control over the undelrying container.
+
+Once a Docker image is started, it becomes a running “container” of the image and can be started multiple times to obtain multiple, independent containers. This means you can have many instances of it running off a single build.
+There’s no difference with Heroku other than terminology. After using a BuildPack to create your app, you get a slug, which in turn runs on a Dyno. Heroku describes a Dyno as “a lightweight container running a single user-specified command.”
 
 
 
