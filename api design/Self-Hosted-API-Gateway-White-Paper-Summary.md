@@ -33,6 +33,18 @@ This is a summary of the 'API Management in a Hybrid and Multi-Cloud World' pape
 - Wherever the self-hosted gateway is running, however, it must be federated with - connected to- the main cloud service.
 - Each self hosted gateway is attached to and managed by a single Azure API Management cloud service.
 
+# How Self Hosted Gateways work in Azure
+
+- The self hosted gateway is a containerized, functionally equivalent version of the managed gateway deployed to Azure as part of a every API management service as part of every API Management service.
+- The self-hosted gateway is avbailabel as a lInux based DOcker container from the Microsoft COntainer registry. It can be deployed to Docker, Kubernetes, or any other container orchestration solution running on a server cluster on premises, cloud infrastructure, or for evaluation and deployment purposes, on a personal computer.
+- Self hosted gateways require outbound TCP/IP connectivitity to Azure on port 443. Each self-hosted gateway must be associated with a single API management service and is configured via its managament plane.
+
+
+
+
+
+
+
 
 
   
